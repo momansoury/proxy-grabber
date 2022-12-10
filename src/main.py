@@ -22,9 +22,12 @@ def config_loader():
 #         return False
 #     return ((perf_counter() - start) * 1000).__round__()
 
-# def rem_duplicate(ilist: list):
-#     ...
-
+def rem_duplicate(ilist: list):
+    res=[]
+    for x in ilist:
+        if x not in res:
+            res.append(x)
+    return res
     
 def checker(q,PROXIESLISTS):
     while not q.empty():
@@ -77,8 +80,11 @@ if __name__ == '__main__':
         threading.Thread(target=checker,args=(myqueue,PROXIES_LISTS),daemon=True).start()
         logging.debug(f"Thread {x} started!")
     checker(myqueue,PROXIES_LISTS)
-    logging.info(f"Grabbed Proxies: {len(PROXIES_LISTS)}")
+    logging.info(f"\n[~]Grabbed Proxies: {len(PROXIES_LISTS)}")
+    logging.debug("[...]removing duplicates")
+    final=rem_duplicate(PROXIES_LISTS)
+    logging.debug(f"[{len(PROXIES_LISTS)-len(final)}]removed!")
     with open(args.output, "w") as op:
-        for _ in PROXIES_LISTS:
+        for _ in final:
             op.write(f"{_}\n")
     print("\n[+]Done!")
