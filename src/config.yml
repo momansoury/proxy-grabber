@@ -1,0 +1,9 @@
+URLS:
+    - https://raw.githubusercontent.com/proxy4parsing/proxy-list/main/http.txt
+    - https://raw.githubusercontent.com/mertguvencli/http-proxy-list/main/proxy-list/data.txt
+    - https://raw.githubusercontent.com/hendrikbgr/Free-Proxy-Repo/master/proxy_list.txt
+    - https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/http.txt
+    - https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/https.txt
+    - https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/proxy.txt
+    - https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks4.txt
+    - https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks5.txt
