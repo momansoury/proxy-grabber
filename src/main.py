@@ -55,10 +55,10 @@ if __name__ == '__main__':
 #     'https': 'socks5h://{}'
 # }
     parser = argparse.ArgumentParser(description="Simple proxy grabber")
-    parser.add_argument("-u", "--url", help="test connect domain", default='https://www.google.com')
+    # parser.add_argument("-u", "--url", help="test connect domain", default='https://www.google.com')
     parser.add_argument('-T', '--threads', help="threads number, default is 10", default=10, type=int)
     parser.add_argument("-t", "--timeout", help="timeout in seconds, default is 4sec.", default=4 , type=int)
-    parser.add_argument("-l", "--lport", help="start local port", default=None, type=int)
+    # parser.add_argument("-l", "--lport", help="start local port", default=None, type=int)
     parser.add_argument('-v', "--verbose", help="increase output verbosity", action="store_true", default=False)
     parser.add_argument('-d', '--debug', help="debug log", action='store_true', default=False)
     parser.add_argument('-o', '--output', help="output file", default='grabbed.txt')
