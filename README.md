@@ -2,6 +2,6 @@
 simple script to grabbing proxies
 ## Usage
 ```
-python3 mian.py -d -T 1
+cd src&&python3 main.py -d -T 1
 ```
 
